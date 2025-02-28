@@ -68,14 +68,14 @@
       <ul>
           <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
           <li><a href="#">Equipo</a></li>
-          <li><a href="#">Carrera</a></li>
+          <li><a href="#">Contacto</a></li>
       </ul>
   </div>
 
     <div class="footer-column">
       <h3>Contactanos</h3>
       <ul>
-          <li><a href="#" class="cta">Carrera</a></li>
+          <li><a href=""https://wa.me/+598097027010?text=Hola,%20buen%20día.%20Quisiera%20información%20sobre..." target=”_blank”" class="cta">Contacto</a></li>
       </ul>
   </div>
   

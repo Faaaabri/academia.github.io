@@ -209,6 +209,7 @@ nav ul li {
 /* Color para el enlace activo */
 .nav-link.active {
   color: var(--primario); /* Cambia este color al que desees para el enlace activo */
+  font-weight: bold;
 }
 
 
@@ -1409,6 +1410,11 @@ input[type="checkbox"] {
 
     .phone{
       display: none;
+    }
+
+    .phone{
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     .contenido h2{
