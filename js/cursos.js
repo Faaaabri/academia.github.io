@@ -21,7 +21,7 @@ const cursos = [
         precio: 13000,
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
-        precioxclase: 900,
+        precioxclase: 950,
         clases: 15,
         clasesxsemana: 3,
         
@@ -37,7 +37,7 @@ const cursos = [
         precio: 14500,
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
-        precioxclase: 1065,
+        precioxclase: 1050,
         clases: 15,
         clasesxsemana: 4,
 

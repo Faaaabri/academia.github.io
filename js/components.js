@@ -16,7 +16,7 @@
         <li><a href="cursos.html" class="nav-link">Tarifas</a></li>
         <li><a href="examen_teorico.html" class="nav-link">Examen teórico</a></li>
         <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-        <li><a href="faqs.html" class="nav-link">Contacto</a></li>
+        <li><a href="faqs.html" class="nav-link">Preguntas frecuentes</a></li>
 
       </ul>
     </nav>
