@@ -1,7 +1,7 @@
 const cursos = [
     {
         titulo: "Curso de manejo de auto",
-        precio: 11000,
+        precio: 11500,
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 850,
@@ -18,7 +18,7 @@ const cursos = [
 
     {
         titulo: "Curso de auto semi-intensivo",
-        precio: 12000,
+        precio: 13000,
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 900,
@@ -34,7 +34,7 @@ const cursos = [
 
     {
         titulo: "Curso de auto intensivo",
-        precio: 14000,
+        precio: 14500,
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 1065,
@@ -51,7 +51,7 @@ const cursos = [
 
     {
         titulo: "Curso de manejo de moto",
-        precio: 3800,
+        precio: 4000,
         descripcion: "Domina el arte de conducir una motocicleta con confianza. Este curso incluye instrucciones prácticas y consejos para todos los niveles.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 850,
