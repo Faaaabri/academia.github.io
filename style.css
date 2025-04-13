@@ -688,6 +688,7 @@ header nav ul li a.active {
     font-size: 1.4rem;
     margin: 0 !important;
     font-weight: 500;
+    text-transform: none !important;
   }
   
   .item p {
