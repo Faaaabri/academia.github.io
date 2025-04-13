@@ -723,13 +723,13 @@ header nav ul li a.active {
 
 .footer-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
 .footer-column {
     margin-top: auto;
-    margin: 2rem 3.2rem 0 3.2rem;
+    margin: 2rem 0rem 0 0rem;
 }
 
 .footer-column h3 {
