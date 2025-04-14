@@ -5,7 +5,7 @@
     
   let menu = `
   <header>
-    <div> <a href="index.html">    <img src="imgs/logo.png" class="logo" alt="logo de la academia"></a> </div>
+    <div> <a href="index.html">    <img src="imgs/logo_2.png" class="logo" alt="logo de la academia"></a> </div>
 
     <input type="checkbox" id="nav_check" hidden>
 
