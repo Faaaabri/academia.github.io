@@ -69,8 +69,8 @@
       <h3>Empresa</h3>
       <ul>
           <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-          <li><a href="#">Equipo</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="sobre_nosotros.html#equipo">Equipo</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
       </ul>
   </div>
 

@@ -67,7 +67,7 @@ const cursos = [
 
     {
         titulo: "Curso de manejo de omnibus",
-        precio: 12000,
+        precio: 11000,
         descripcion: "Conviértete en un conductor de autobús profesional con nuestro completo curso. Aprende todo, desde la operación del vehículo hasta la seguridad del pasajero.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 850,
