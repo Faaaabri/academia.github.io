@@ -140,6 +140,10 @@ function agregarInfoAdicionalCurso() {
     const clasesP = document.createElement('p');
     clasesP.innerHTML = `<i class="fas fa-chalkboard-teacher"></i> Incluye ${curso.clases} clases prácticas`;
 
+    
+    const precioCont = document.createElement('p');
+    precioCont.innerHTML = `<i class="fas fa-dollar-sign"></i>Precio contado $${curso.preciocontado}`;
+
     const clasesxsemanaP = document.createElement('p');
     clasesxsemanaP.innerHTML = `<i class="fas fa-calendar-alt"></i> ${curso.clasesxsemana} Clases por semana`;
 
@@ -153,6 +157,7 @@ function agregarInfoAdicionalCurso() {
     infoAdicionalDiv.innerHTML = '';
 
     // Agregar los elementos <p> al div de información adicional
+    infoAdicionalDiv.appendChild(precioCont);
     infoAdicionalDiv.appendChild(clasesP);
     infoAdicionalDiv.appendChild(clasesxsemanaP);
     infoAdicionalDiv.appendChild(precioxclaseP);

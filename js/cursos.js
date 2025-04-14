@@ -1,7 +1,9 @@
 const cursos = [
     {
         titulo: "Curso de manejo de auto",
-        precio: 11500,
+        precio: 12750,
+        preciocontado: 11500,
+
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 850,
@@ -18,7 +20,9 @@ const cursos = [
 
     {
         titulo: "Curso de auto semi-intensivo",
-        precio: 13000,
+        precio: 14250,
+        preciocontado: 13000,
+
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 950,
@@ -34,7 +38,9 @@ const cursos = [
 
     {
         titulo: "Curso de auto intensivo",
-        precio: 14500,
+        precio: 16000,
+        preciocontado: 14500,
+
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
         precioxclase: 1050,
@@ -124,6 +130,9 @@ function insertarCursosEnHTML() {
     const clasesP = document.createElement('p');
     clasesP.innerHTML = `<i class="fas fa-chalkboard-teacher"></i> Incluye ${curso.clases} clases prácticas`;
 
+    const precioCont = document.createElement('p');
+    precioCont.innerHTML = `<i class="fas fa-dollar-sign"></i>Precio contado $${curso.preciocontado}`;
+
     const clasesxsemanaP = document.createElement('p');
     clasesxsemanaP.innerHTML = `<i class="fas fa-calendar-alt"></i> ${curso.clasesxsemana} Clases por semana`;
 
@@ -133,27 +142,19 @@ function insertarCursosEnHTML() {
     const precioxclaseP = document.createElement('p');
     precioxclaseP.innerHTML = `<i class="fas fa-dollar-sign"></i> Precio por clase: $${curso.precioxclase}`;
 
-
-        // Crear el enlace con la clase cta
-      /*   const aCTA = document.createElement('a');
-        aCTA.classList.add('cta');
-        aCTA.textContent = "Ver detalles";
- */
         // Añadir elementos al div de contenido del curso
         divCardContent.appendChild(h2);
         divCardContent.appendChild(span);
 
         divCardContent.appendChild(divPrecioYBotones);
+        divCardContent.appendChild(precioCont);
         divCardContent.appendChild(clasesP);
+
         divCardContent.appendChild(clasesxsemanaP);
         divCardContent.appendChild(precioxclaseP);
         divCardContent.appendChild(teoricoP);
         divCardContent.appendChild(tramitesP);
-
-      /*   divCardContent.appendChild(aCTA); */
-
-    /*      // Añadir la imagen al li
-        li.appendChild(img); */ 
+ 
 
         // Añadir div de contenido del curso al li
         li.appendChild(divCardContent);
