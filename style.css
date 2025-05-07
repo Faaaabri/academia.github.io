@@ -630,12 +630,12 @@ header nav ul li a.active {
 
 .antesde{
   background-color: #f4f7fc;
-  margin: var(--separador-largo) 0;
-}
+/*   margin: var(--separador-largo) 0;
+ */}
 
 .antesde .elegirnos{
-  margin: 0 !important;
-  padding: var(--separador-largo) 0;
+/*   margin: 0 !important;
+ */  padding: var(--separador-largo) 0;
 }
 
 /* ELEGIRNOS */
