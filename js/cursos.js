@@ -159,11 +159,11 @@ function insertarCursosEnHTML() {
         // Añadir div de contenido del curso al li
         li.appendChild(divCardContent);
 
-        // Agregar evento de clic a la card para "Ver detalles"
+/*         // Agregar evento de clic a la card para "Ver detalles"
         li.addEventListener('click', () => {
             // Redirigir a la página de detalle_curso.html con el ID del curso en la URL
             window.location.href = `detalle_curso.html?id=${index}`;
-        });
+        }); */
 
         // Agregar el li al contenedor de cursos
         cursosContainer.appendChild(li);

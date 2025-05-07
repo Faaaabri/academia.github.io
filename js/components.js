@@ -9,7 +9,7 @@
 
     <input type="checkbox" id="nav_check" hidden>
 
-    <nav >
+    <nav>
       <ul>
         <li><a href="index.html" class="nav-link">Inicio</a></li>
         <li><a href="sobre_nosotros.html" class="nav-link">Sobre nosotros</a></li>
