@@ -21,7 +21,7 @@
       </ul>
     </nav>
 
-    <div class="phone"> <a><span class="material-symbols-outlined">call</span></a> 097 027 010</div>
+    <div class="phone"> <a href="index.html><span class="material-symbols-outlined">call</span></a> 097 027 010</div>
 
     
 
