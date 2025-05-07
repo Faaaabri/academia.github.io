@@ -1,7 +1,5 @@
 
     /* MENU */
-
-    /* Teorico y faqs van en SERVICIOS */
     
   let menu = `
   <header>
