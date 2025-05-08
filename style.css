@@ -1493,7 +1493,7 @@ input[type="checkbox"] {
 @media only screen and (max-width: 768px) {
 
     :root{
-        --titulo-primario: 3.1rem;
+        --titulo-primario: 2.5rem;
         --titulo-secundario: 2rem;
         --titulo-terciario: 2rem;
     }
@@ -1502,9 +1502,9 @@ input[type="checkbox"] {
       font-size: .9rem;
     }
 
-    .container:first-of-type{
+/*     .container:first-of-type{
       width: 100%;
-    }
+    } */
 
     .container {
         width: 80%;
@@ -1655,7 +1655,7 @@ input[type="checkbox"] {
 
 
     .elegirnos{
-      margin: var(--separador-medio) 0px;
+      margin-top: var(--separador-medio);
     }
 
     .elegirnos h2{
@@ -1682,7 +1682,6 @@ input[type="checkbox"] {
         border-radius: var(--border-radius);
         overflow: hidden;
         height: 90vh;
-        margin: 0;
         box-shadow: var(--sombra);
 
     }
