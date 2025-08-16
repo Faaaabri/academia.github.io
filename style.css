@@ -94,8 +94,8 @@ a {
     font-weight: bold;
 }
 
-.subrayado{
-        background:linear-gradient(180deg, transparent 60%, var(--primario) 60%);
+.subrayado {
+    background: linear-gradient(180deg, transparent 60%, var(--primario) 60%);
 }
 
 button{
@@ -167,7 +167,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--separador-menor);
   width: 100%;
 }
  .logo {
@@ -286,6 +285,99 @@ header nav ul li a.active {
 /* HERO */
 
 .hero {
+  position: relative;
+  width: 100%;
+  min-height: 500px; /* ajusta según tu diseño */
+  background-image: url('imgs/image00008.jpeg');
+  background-size: cover;
+  border-radius: 3rem;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+    border-radius: 3rem;
+
+  background-color: rgba(3, 92, 180, 0.65); /* Azul con transparencia */
+  mix-blend-mode: multiply; /* efecto tipo Photoshop */
+  z-index: 1;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 4.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 4rem;
+
+}
+
+.amarillo{
+  color: #ffd105;
+}
+
+
+
+.hero-content .negrita {
+    font-weight: bold;
+}
+
+.hero-content p {
+  font-weight: lighter !important;
+    margin: 2.5rem 0;
+      line-height: 1.6;
+      text-align: left;
+
+}
+
+
+.cta {
+    display: inline-flex;
+    padding: 10px 32px;
+    background-color: #ffd105 !important;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    align-items: center;
+    transition: .45s;
+    transition: transform 0.3s ease;
+}
+
+.cta:hover {
+    background: #e8431f;
+}
+
+.hero-content a.cta:last-of-type {
+  background-color: transparent !important;
+  border: 1px solid white;
+  margin-left: 1rem;
+}
+
+
+/* 
+.hero {
     display: flex;
     justify-content: center;
     height: 80vh;
@@ -295,13 +387,13 @@ header nav ul li a.active {
     display: flex;
     align-items: center;
     border-radius: 2rem;
-    height: 70vh; /* Ajusta la altura según sea necesario */
+    height: 70vh; /* Ajusta la altura según sea necesario
 }
 
 .hero-image {
     width: 45%;
     border-radius: 3rem;
-    height: 100%; /* Ajusta la altura de la imagen */
+    height: 100%; /* Ajusta la altura de la imagen 
     object-fit: cover;
     box-shadow: var(--sombra);
     
@@ -332,6 +424,8 @@ header nav ul li a.active {
 .principal-titulo .titulo-secundario{
   margin-bottom: 0;
 }
+ 
+ */
 
 
 /* CONTACTO */
@@ -446,6 +540,14 @@ header nav ul li a.active {
     flex-direction: row;
     align-items: center;
     width: 100%;
+}
+
+.problema-teorico-content .text h2 .subrayado{
+    background: linear-gradient(180deg, transparent 60%, #ffd105 60%);
+}
+
+.problema-teorico-content .text h4{
+  color: #ffd105;
 }
 
 .problema-teorico{
@@ -1012,6 +1114,11 @@ header nav ul li a.active {
   background-color: #ffffff00;
 }
 
+
+        .cursos-textos h4{
+      color: #ffd105 !important;
+    } 
+
 .examen{
   display: flex;
   flex-direction: column;
@@ -1211,7 +1318,7 @@ header nav ul li a.active {
     color: var(--negro);
   }
   .card span {
-    color: var(--primario);
+    color: #ffd105;
     font-weight: 600;
     font-size: 2rem;
     margin: 0;
@@ -1741,10 +1848,7 @@ input[type="checkbox"] {
 /*     .cursos-textos{
       text-align: left !important;
     }
-
-    .cursos-textos h2{
-      text-align: left !important;
-    } */
+*/
 
     /* TESTIMONIAL */
 
@@ -1762,6 +1866,8 @@ input[type="checkbox"] {
     .card .img{
       height: 180px;
     }
+
+
 
     .cursos-content .cursos-container{
       display: flex;

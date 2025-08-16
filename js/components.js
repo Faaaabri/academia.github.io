@@ -1,38 +1,30 @@
 
-    /* MENU */
-    
-  let menu = `
-  <header>
-    <div> <a href="index.html">    <img src="imgs/logo_2.png" class="logo" alt="logo de la academia"></a> </div>
-
+/* MENU */
+let menu = `
+    <div> <a href="index.html"><img src="imgs/logo_2.png" class="logo" alt="logo de la academia"></a> </div>
     <input type="checkbox" id="nav_check" hidden>
-
     <nav>
-      <ul>
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="sobre_nosotros.html" class="nav-link">Sobre nosotros</a></li>
-        <li><a href="cursos.html" class="nav-link">Precios</a></li>
-        <li><a href="examen_teorico.html" class="nav-link">Examen teórico</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-        <li><a href="faqs.html" class="nav-link">Preguntas frecuentes</a></li>
-
-      </ul>
+        <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="sobre_nosotros.html" class="nav-link">Sobre nosotros</a></li>
+            <li><a href="cursos.html" class="nav-link">Precios</a></li>
+            <li><a href="examen_teorico.html" class="nav-link">Examen teórico</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li><a href="faqs.html" class="nav-link">Preguntas frecuentes</a></li>
+        </ul>
     </nav>
-
-    <div class="phone"> <a href="index.html><span class="material-symbols-outlined">call</span></a> 097 027 010</div>
-
-    
-
+    <div class="phone"> 
+        <a href="index.html"><span class="material-symbols-outlined">call</span></a> 097 027 010
+    </div>
     <label for="nav_check" class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </label>
-  </header>
-  `;
-  
-  // Inserta el menú en el contenedor
-  document.querySelector('.container').innerHTML = menu;
+`;
+
+// Inserta el menú dentro del primer <header>
+document.querySelector('header').innerHTML = menu;
 
 
   /* FOOTER */
