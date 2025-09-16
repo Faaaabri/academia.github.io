@@ -1273,8 +1273,23 @@ header nav ul li a.active {
     border: 1px solid rgba(128, 128, 128, 0.325);
     text-align: start;
     align-items: center;
-    cursor: pointer;
   }
+
+  .btn-info {
+  display: inline-block;
+  margin-top: 12px;
+  padding: .75rem 1.5rem;
+  background-color: var(--primario); /* color oficial de WhatsApp */
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #263ac0;
+}
 
   
   .card-content{
@@ -1315,14 +1330,26 @@ header nav ul li a.active {
     margin: 0;
     font-weight: 500;
     font-size: 1rem;
-    color: var(--negro);
+    color: var(--primario);
   }
   .card span {
-    color: #ffd105;
-    font-weight: 600;
-    font-size: 2rem;
+    color: var(--primario);
+    font-weight: 400;
+    font-size: 1.5rem;
     margin: 0;
     text-align: center;
+    margin-right: .5rem;
+  }
+
+.card-content > span:first-of-type {
+  color: var(--negro);
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+  .card p{
+    display: flex;
+    align-items: center;
   }
 
   .precio-y-botones span{
@@ -1393,6 +1420,28 @@ header nav ul li a.active {
   .cursos-content .card img{
     height: 250px !important;
   }
+
+  /* DESTACADA */
+
+  .card.destacada {
+  transform: scale(1.03);
+  background-color: var(--primario);
+  color: white;
+}
+
+.card.destacada h2,
+.card.destacada span,
+.card.destacada p {
+  color: white !important;
+}
+
+.card.destacada .btn-info {
+  background-color: var(--negro); 
+}
+
+.card.destacada .btn-info:hover {
+  background-color: #161616;
+}
 
 /* PREGUNTAS FRECUENTES */
 .faqs{

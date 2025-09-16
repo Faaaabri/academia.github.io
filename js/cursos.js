@@ -89,86 +89,78 @@ const cursos = [
 
 ];
 
-/* CURSOS EN INDEx */
+/* CURSOS EN INDEX */
 function insertarCursosEnHTML() {
-    const cursosContainer = document.getElementById('cursos-content');
+  const cursosContainer = document.getElementById('cursos-content');
 
-    cursos.forEach((curso, index) => {
-        // Crear elementos HTML
-        const li = document.createElement('li');
-        li.classList.add('card');
+  cursos.forEach((curso, index) => {
+    const li = document.createElement('li');
+    li.classList.add('card');
 
-        // Crear la imagen fuera del div de contenido del curso
+    const divCardContent = document.createElement('div');
+    divCardContent.classList.add('card-content');
 
-   /*      
-         const img = document.createElement('img');
-        img.classList.add('img');
-        img.src = curso.imagen;
-         */
+    const h2 = document.createElement('h2');
+    h2.textContent = curso.titulo;
 
-        // Crear div para contenido del curso
-        const divCardContent = document.createElement('div');
-        divCardContent.classList.add('card-content');
-
-        const h2 = document.createElement('h2');
-        h2.textContent = curso.titulo;
-
-        const divPrecioYBotones = document.createElement('div');
-        divPrecioYBotones.classList.add('precio-y-botones');
-
-        const span = document.createElement('span');
-        span.textContent = `$${curso.precio}`;
-
-
-    // Crear elementos <p> para mostrar la información adicional
-    const teoricoP = document.createElement('p');
-    teoricoP.innerHTML = `<i class="fas fa-book"></i> ${curso.teorico}`;
-
-    const tramitesP = document.createElement('p');
-    tramitesP.innerHTML = `<i class="fas fa-clipboard-check"></i> ${curso.tramites}`;
-
-    const clasesP = document.createElement('p');
-    clasesP.innerHTML = `<i class="fas fa-chalkboard-teacher"></i> Incluye ${curso.clases} clases prácticas`;
+    const span = document.createElement('span');
+    span.textContent = `$${curso.precio}`;
 
     const precioCont = document.createElement('p');
-    precioCont.innerHTML = `<i class="fas fa-dollar-sign"></i>Precio contado $${curso.preciocontado}`;
+    precioCont.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> Precio contado $${curso.preciocontado}`;
+
+    const clasesP = document.createElement('p');
+    clasesP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> Incluye ${curso.clases} clases prácticas`;
 
     const clasesxsemanaP = document.createElement('p');
-    clasesxsemanaP.innerHTML = `<i class="fas fa-calendar-alt"></i> ${curso.clasesxsemana} Clases por semana`;
-
-    const examenP = document.createElement('p');
-    examenP.innerHTML = `<i class="fas fa-file-alt"></i> ${curso.examen}`;
+    clasesxsemanaP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> ${curso.clasesxsemana} Clases por semana`;
 
     const precioxclaseP = document.createElement('p');
-    precioxclaseP.innerHTML = `<i class="fas fa-dollar-sign"></i> Precio por clase: $${curso.precioxclase}`;
+    precioxclaseP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> Precio por clase: $${curso.precioxclase}`;
 
-        // Añadir elementos al div de contenido del curso
-        divCardContent.appendChild(h2);
-        divCardContent.appendChild(span);
+    const teoricoP = document.createElement('p');
+    teoricoP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> ${curso.teorico}`;
 
-        divCardContent.appendChild(divPrecioYBotones);
-        divCardContent.appendChild(precioCont);
-        divCardContent.appendChild(clasesP);
+    const tramitesP = document.createElement('p');
+    tramitesP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> ${curso.tramites}`;
 
-        divCardContent.appendChild(clasesxsemanaP);
-        divCardContent.appendChild(precioxclaseP);
-        divCardContent.appendChild(teoricoP);
-        divCardContent.appendChild(tramitesP);
- 
+    const examenP = document.createElement('p');
+    examenP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> ${curso.examen}`;
 
-        // Añadir div de contenido del curso al li
-        li.appendChild(divCardContent);
+    // ✅ Botón de WhatsApp
+    const botonInfo = document.createElement("a");
+    botonInfo.innerText = "Más información";
+    botonInfo.classList.add("btn-info");
+    botonInfo.href = `https://wa.me/598097027010?text=Hola,%20quiero%20más%20información%20sobre%20el%20${encodeURIComponent(curso.titulo)}`;
+    botonInfo.target = "_blank";
 
-/*         // Agregar evento de clic a la card para "Ver detalles"
-        li.addEventListener('click', () => {
-            // Redirigir a la página de detalle_curso.html con el ID del curso en la URL
-            window.location.href = `detalle_curso.html?id=${index}`;
-        }); */
+    // Ensamblar card
+    divCardContent.appendChild(h2);
+    divCardContent.appendChild(span);
+    divCardContent.appendChild(precioCont);
+    divCardContent.appendChild(clasesP);
+    divCardContent.appendChild(clasesxsemanaP);
+    divCardContent.appendChild(precioxclaseP);
+    divCardContent.appendChild(teoricoP);
+    divCardContent.appendChild(tramitesP);
+    divCardContent.appendChild(examenP);
+    divCardContent.appendChild(botonInfo);
 
-        // Agregar el li al contenedor de cursos
-        cursosContainer.appendChild(li);
+    li.appendChild(divCardContent);
+    cursosContainer.appendChild(li);
+
+    // ✅ Marcar semi-intensivo como destacada por defecto
+    if (curso.titulo.includes("semi-intensivo")) {
+      li.classList.add("destacada");
+    }
+
+    // ✅ Click para destacar otra card (excepto si clickea el botón)
+    li.addEventListener("click", (e) => {
+      if (e.target.closest(".btn-info")) return; // no hacer nada si fue en el botón
+      document.querySelectorAll(".card").forEach(c => c.classList.remove("destacada"));
+      li.classList.add("destacada");
     });
+  });
 }
 
-// Llamada a la función para insertar los cursos en el HTML
 insertarCursosEnHTML();
