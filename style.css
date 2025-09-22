@@ -1727,6 +1727,11 @@ input[type="checkbox"] {
         text-align: left; /* Centrar el texto */
     }
 
+    .hero-content .cta {
+      min-width: 70%;
+      margin-bottom: 1rem;
+    }
+
     .hero-content h1 {
         font-size: var(--titulo-primario); /* Reducir el tamaño del título */
         line-height: 1.2; /* Ajustar la altura de línea */
