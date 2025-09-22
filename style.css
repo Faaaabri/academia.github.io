@@ -1664,7 +1664,7 @@ input[type="checkbox"] {
     } */
 
     .container {
-        width: 80%;
+        width: 85%;
     }
 
     .fondo-textos p{
@@ -1679,8 +1679,8 @@ input[type="checkbox"] {
     header{
       width: auto;
       margin-bottom: var(--separador-menor);
-      box-shadow: var(--sombra);
-      height: 5rem;
+/*    box-shadow: var(--sombra); */ 
+     height: 5rem;
     }
 
     .phone{
@@ -1711,6 +1711,7 @@ input[type="checkbox"] {
       align-items: center;
       align-items: normal;
       height: auto;
+      width: auto;
     }
       
 
