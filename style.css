@@ -1678,7 +1678,7 @@ input[type="checkbox"] {
     /* MENU */
     header{
       width: auto;
-      margin-bottom: var(--separador-menor);
+      margin: .75rem 0px;
 /*    box-shadow: var(--sombra); */ 
      height: 5rem;
     }
