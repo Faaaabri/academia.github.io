@@ -288,7 +288,7 @@ header nav ul li a.active {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 500px; /* ajusta según tu diseño */
+  min-height: 500px;
   background-image: url('imgs/image00008.jpeg');
   background-size: cover;
   border-radius: 3rem;
@@ -297,6 +297,8 @@ header nav ul li a.active {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  margin-bottom: var(--separador-largo);
+
 }
 
 .hero::before {
@@ -553,6 +555,8 @@ header nav ul li a.active {
 
 .problema-teorico{
   margin-bottom: var(--separador-largo);
+    margin-top: var(--separador-largo);
+
 }
 
 .problema-teorico-content img {

@@ -67,7 +67,7 @@ document.querySelector('header').innerHTML = menu;
     <div class="footer-column">
       <h3>Contactanos</h3>
       <ul>
-          <li><a href=""https://wa.me/+598097027010?text=Hola,%20buen%20día.%20Quisiera%20información%20sobre..." target=”_blank”" class="cta">Contacto</a></li>
+          <li><a href="https://wa.me/+598097027010?text=Hola,%20buen%20día.%20Quisiera%20información%20sobre..." target=”_blank”" class="cta">Contacto</a></li>
       </ul>
   </div>
   
