@@ -1,12 +1,12 @@
 const cursos = [
     {
         titulo: "Curso de manejo de auto",
-        precio: 12750,
-        preciocontado: 11500,
+        precio: 12500,
+        preciocontado: 13500,
 
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
-        precioxclase: 850,
+        precioxclase: 900,
         clases: 15,
         clasesxsemana: 2,
 
@@ -20,12 +20,12 @@ const cursos = [
 
     {
         titulo: "Curso de auto semi-intensivo",
-        precio: 14250,
-        preciocontado: 13000,
+        precio: 13500,
+        preciocontado: 15000,
 
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
-        precioxclase: 950,
+        precioxclase: 1000,
         clases: 15,
         clasesxsemana: 3,
         
@@ -38,12 +38,12 @@ const cursos = [
 
     {
         titulo: "Curso de auto intensivo",
-        precio: 16000,
-        preciocontado: 14500,
+        precio: 15000,
+        preciocontado: 16500,
 
         descripcion: "Aprende a manejar un automóvil de forma segura y eficiente. Este curso cubre desde conceptos básicos hasta técnicas avanzadas.",
         imagen: "imgs/OIP.jpg",
-        precioxclase: 1050,
+        precioxclase: 1100,
         clases: 15,
         clasesxsemana: 4,
 
@@ -107,7 +107,7 @@ function insertarCursosEnHTML() {
     span.textContent = `$${curso.precio}`;
 
     const precioCont = document.createElement('p');
-    precioCont.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> Precio contado $${curso.preciocontado}`;
+    precioCont.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> Precio normal $${curso.preciocontado}`;
 
     const clasesP = document.createElement('p');
     clasesP.innerHTML = `<span class="material-symbols-outlined"> check_circle </span> Incluye ${curso.clases} clases prácticas`;
