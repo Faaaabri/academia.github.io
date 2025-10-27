@@ -18,6 +18,10 @@
 
 }
 
+*{
+      font-family: 'Poppins', sans-serif;
+}
+
 .titulo-primario{
     font-size: var(--titulo-primario);
     text-align: center;
