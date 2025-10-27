@@ -48,7 +48,7 @@ document.querySelector('header').innerHTML = menu;
       <h3>Categorías</h3>
       <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre_nosotros.html">Acerca de</a></li>
+          <li><a href="nosotros.html">Acerca de</a></li>
           <li><a href="examen_teorico.html">Servicios</a></li>
           <li><a href="cursos.html">Precios</a></li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -58,8 +58,8 @@ document.querySelector('header').innerHTML = menu;
   <div class="footer-column">
       <h3>Empresa</h3>
       <ul>
-          <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-          <li><a href="sobre_nosotros.html#equipo">Equipo</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="nosotros.html#equipo">Equipo</a></li>
           <li><a href="index.html#contact">Contacto</a></li>
       </ul>
   </div>

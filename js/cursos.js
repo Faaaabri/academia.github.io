@@ -1,4 +1,4 @@
-const cursos = [
+export const cursos = [
     {
         titulo: "Curso de manejo de auto",
         precio: 12500,

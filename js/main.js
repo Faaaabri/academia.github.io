@@ -1,5 +1,8 @@
+import { cursos } from './cursos.js';
+
+
 function insertarCursosEnHTML(cursos) {
-    const cursosContainer = document.getElementById('cursos-container');
+const cursosContainer = document.getElementById('cursos-content');
 
     cursos.forEach(curso => {
         // Crear elementos HTML
