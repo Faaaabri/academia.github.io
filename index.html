@@ -18,6 +18,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</noscript>
+
   <!-- 🔹 Preload y carga diferida de Material Symbols (íconos) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0&display=swap" media="print" onload="this.media='all'">
@@ -26,7 +31,9 @@
   </noscript>
 
   <!-- 🔹 Tus estilos principales -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
 
   <!-- 🔹 Prefetch opcional de páginas internas (mejora UX al navegar) -->
   <link rel="prefetch" href="contacto.html">
@@ -155,7 +162,7 @@
 
     <section class="container problema-teorico">
         <div class="problema-teorico-content">
-            <img src="imgs/image00020.jpg" alt="Clase teórica en la academia" />
+            <img src="imgs/image00020.avif" alt="Clase teórica en la academia" />
             <div class="text" data-aos="fade-up" data-aos-duration="1300">
                 <h4>Te ayudamos</h4>
                 <h2>¿Problemas con el <span class="subrayado">examen teórico?</span></h2>
